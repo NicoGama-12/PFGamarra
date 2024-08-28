@@ -5,21 +5,38 @@
 }
 
 .header-container{
+    background-color: #C4D69A;
     padding: 0px 50px;
+    width: 100%;
 }
 
 .navbar-logo{
     width: 150px;
+    margin-right: 100px;
 }
 
 .navbar-container{
     background-color: #C4D69A;
+    display: flex;
+}
+
+.enlaces{
+    display: flex;
+}
+
+.nav-item{
+    font-size: 30px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.nav-link{
+    text-decoration: none;
 }
 
 .img-fondo-index{
     width: 100%;
     height: auto;
-
 }
 
 .hero{
@@ -86,7 +103,7 @@
 
 .footer {
     background-color: #191919;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
   
@@ -181,4 +198,25 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.faq-title{
+    padding: 30px 70px;
+    color: blue;
+}
+
+.ask-question{
+    margin-left: 70px;
+}
+
+.questions h3 {
+    color: blue;
+}
+
+.ask-question-container{
+    background-image: url(../assets/cielo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
 }
