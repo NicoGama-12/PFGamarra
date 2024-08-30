@@ -34,20 +34,19 @@
     text-decoration: none;
 }
 
-.img-fondo-index{
-    width: 100%;
-    height: auto;
-}
-
 .hero{
     text-align: center;
     background-color: #76b1b1;
-    padding: 0px 50px;
 }
 
 .hero-container{
     position: relative;
     display: inline-block;
+}
+
+.img-fondo-index{
+    width: 100%;
+    height: 400px;
 }
 
 .hero-title{
@@ -60,7 +59,6 @@
 
 .hero-container-p{
     font-size: 50px;
-    padding: 40px;
     background-color: #C4D69A;
 }
 
@@ -128,11 +126,55 @@
     transform: scale(1.2);
 }
 
-.productos-container{
-    background-color: black;
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ccd5ae;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card .costo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
     color: #fff;
-    width: 300px;
-    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card .costo:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
 }
 
 .img-fondo{
@@ -154,7 +196,7 @@
     width: 100%;
 }
 
-.contact-form-container h2 {
+.contact-form-container h1 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
@@ -213,10 +255,44 @@ button:hover {
     color: blue;
 }
 
-.ask-question-container{
+.ask-question-container {
     background-image: url(../assets/cielo2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-weight: bold;
+}
+
+.nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.nosotros-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nosotros-text {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.nosotros-text h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .nosotros-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-text {
+        text-align: center;
+    }
 }
