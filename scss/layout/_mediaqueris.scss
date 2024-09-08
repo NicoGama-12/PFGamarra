@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .nosotros-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+      flex: 1 1 100%;
+    }
+}

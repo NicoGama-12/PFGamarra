@@ -1,0 +1,28 @@
+.faq-title{
+    padding: 30px 70px;
+    color: blue;
+}
+
+.ask-question-container {
+    background-image: url(../assets/cielo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+
+    .ask-question{
+        margin-left: 70px;
+    
+        h3 {
+            color: blue;
+        }
+    }
+}
+
+.nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 40px 0;
+}
