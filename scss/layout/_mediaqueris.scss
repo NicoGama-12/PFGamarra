@@ -1,15 +1,35 @@
-@media (max-width: 768px) {
+@media (max-width: 990px){
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner-image{
+            padding-top: 30px;
+            align-items: center center;
+            margin-left: 200px;
+        }
+    }
+}
+
+@media (max-width: 990px){
     .nosotros-container {
         grid-template-columns: 1fr;
     }
 
-    .nosotros-text {
+    .nosotros-text{
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px){
     .hero-container {
       flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form-container {
+      padding: 15px;
     }
 }

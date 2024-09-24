@@ -1,16 +1,39 @@
 .header-container{
-    background-color: #C4D69A;
-    padding: 0px 50px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: #C4D69A;
+  
+
+  .navbar-brand{
+    font-family: "Nerko One";
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 60px;
+    transition: transform 0.5s ease;
+    &:hover{
+      transform: scale(1.1);
+      color: #fff;
+    }
+  }
+
+  .navbar-nav{
+    display: flex;
     width: 100%;
 
-    .navbar-logo{
-        width: 150px;
-        margin-right: 100px;
+    .nav-links{
+      font-size: 20px;
+      text-decoration: none;
+      color: #191919;
+      text-transform: uppercase;
+      margin-right: 25px;
+      padding: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      border-radius: 20px;
+      &:hover{
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
     }
-
-    .nav-item{
-        font-size: 30px;
-        display: flex;
-        margin-left: 10px;
-    }
+  }
 }
